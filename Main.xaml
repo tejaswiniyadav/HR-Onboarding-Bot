@@ -1,0 +1,237 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="702,3541" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="88">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="61">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="614,3476" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="HR Onboarding Bot&#xA;Develop an HR Onboarding Bot that will upload all new staff details into the company's HR portal website from the excel file provided;&#xA;&#xA;Hint...&#xA;&#xA;Read the excel file provided into a data table.&#xA;Upload each employee's details into the company's HR portal.&#xA;" DisplayName="HR Onboarding Bot" sap:VirtualizedContainerService.HintSize="572,3386" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[DT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="510,97" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="RPAStarsChallengeDay2.xlsx" />
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: HR On-boarding Process Form – Stardex" sap:VirtualizedContainerService.HintSize="510,2980" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="f58219c0-a44a-41ac-90dc-30988229df4c" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,2754" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,2664" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,2538" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'New Employee'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;Employee ID&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="48, 560, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control' aaname='' /&gt;" Guid="080c45ef-3ae6-49b9-bbc1-b0455fa20ad6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPrSURBVHhe7dq9TuNMFIBhX/C2lNvR0dFSUnALSGm4BCTENSBo+M2PY2dnfebHmZmMAwtr8IH3kY60cRzboXgzmu+rNps/RqZtZTZ2miad9TpMyzAMw4w6rrd5h0OfpdWh2zbgebjji9U1wzAM8xUTtzgPuQ14HG4ZOQgAmBZpc9xqaXcVHwAATFvcbBtwWZ6z8gaA6ZNWhy2VSv4hey0AAB3C/ngl/1itGn8YADB10mxpd7VatWa5JOAAoIU0W9rdBbwxiwUBBwAtpNnS7kpKvlis/WEAwNRJs6XdNuDzOQEHAC2k2TbgshQn4ACghzRb2t0FfE3AAUARF/C1C/jLS+0PAwCmTppNwAFAIQIOAEoRcABQioADgFIEHACUIuAAoBQBBwClRgz4nTk/+m1+HQzNmbn0Z/5Xtxfm8ODYnN/611OSP9vVWeHvMuLfBsC3MnrAD2d3/vUnURfw3VjfzI674xP9DgAmg4B/pjcGXFyedivxowtz418DQO7rAx6iNou3E1zUbMTCsdPrPedHUSwEPLlO9F4pknb1Gx/Ltjl2vo+93/b9/jlL/iHgpe8BALGJBLwLXx/N7d75yZU90J9jX/fB3IbPbTn410n4/LWiICfbEzagcSTTZ06ua12bk+7e/Xca+PxgxPMo7wu4v1f/NwCAzOgB71em2fQRjOPs7ayC45gVzk/CG0cyD6YVRzoLcnK+O28noFF0ZQXffzYo3tPL3yPgAD5gIivwNHivB3w3kHY7RFa+8fsDgbTX96vkeBslva+7Z+nHx11z3w8UAQcwvh8Z8P5c0Z+fPa89vi+g7ple/X6x/Nn3BdyeOxR3AFAb8Dys0b3i6xWuvftc7vXJLD/3tUC7zw3ud5fkz7Mn4MmPDAAUqA14HD57fnidXM9HNrqWO7dwP7lmcs/yufGWiwtw+mOSPEvujQEv3RcAcqMHPN0bjscH6l0B784v/G+HVuF6Nrr5fWP2M+Ufmz7uYbLIh4hvZyDeohjw+LNvuAYAeCMGfCSFQH/YGNcEgJER8I5dZbPfDECZHx5wtzXDlgUAjfQFHABgEXAAUIqAA4BSBBwAlCLgAKAUAQcApQg4AChFwAFAKQIOAEoRcABQioADgFIEHACUSgI+n6/9YQDA1EmzfcAbAg4AiriAN6ZaLl3A23bj3wIATJW0Wpot7bYBl6W4DABg2kKvbcBXKwm4W4XLwaZhJQ4AUyNtlkaH7RNpdxfw1pY8vCH/dfP5uTZPTyvz+CizNA8P27m/ZxiGYcaYuLXSXmmwtFiaLG0OC21ptrS7quvWlnwo4tuQlybchGEYhnnflNrq2jsc78bUdWv+Aofw+0FzEkJGAAAAAElFTkSuQmCC" InformativeScreenshot="8b6c37f37750684ce6e8654023510e0c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="48, 507, 759, 28" ElementType="Text" FriendlyName="'New Employee'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' aaname='New Employee' check:innerText='New Employee' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;Email&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="442, 560, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' class='wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form-control' aaname='' /&gt;" Guid="85333c3d-86b7-480e-89eb-790d2b93eba2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQfSURBVHhe7dq7UttaFIBhPXBaynR0dGkpKXgFZmh4BGYYnoGBhqtt2ZKjaO2LtLYkG4egoCX+b2adGUs7W3KK3zo6J9tuf1cyZSmzdVMU6Ww2cUqGYRhm9PHN7bY4Nlp6Ld12Ae+GW2+0XjMMwzBfNbrH3ZBnOtwyEnQAwPRIn3WvM/0BADB9ScDl0ZwnbwCwQXot3c7kH/KeBQBgh3Q7k3/keREOAQAskG5neV5WqxUBBwBLpNt1wItquSTgAGCJdDuTii+Xm3AIAGCBdNsFfLEg4ABgiXQ7k8dwAg4AtoSAbwg4ABjTBPztbR0OAQAskG4TcAAwiIADgFEEHACMIuAAYBQBBwCjCDgAGEXAAcCo8QJ+c179OPq5c44vH8LCz3V9Vu9/dhs+TclDdXHS/3to57y6Dis/1f1VdXz0q7q4lw+31Wl9rdMbdwaAcSMHfKQo7TH1gI/1w3UYAg7MCQH/bwg4gM/15QH3wb1KXi+4yLl/9Y/H4iuA4fU62L2AJ/uoc+F4GrNu4LqvPfrfx12vOd/eZ9+BAY+vPC71Kyh/3eRa+jsOvK5qrsMrFGC2phFwHZUYo5Or6i4ccmvC57i+DaGPUvzszse4hb3aYPm1/nyIcy+E8Z7TfcXd5S91ftef3xXxvwl4vW/z/dsfkeZ76B+fJNCev89wjIADszVywH14+tOGXcfZ60fGBUkHPFlfU+HVAU9iHqm1aZAH4t+9jo6wC2P7Z6PBazptiIemCbuOc6C/v/dOiHW0CTgwW9N4Ak+Cd0DAu4FUkWrP73rilf113OK10uv6uLeB1eP23PcDtSfghz2Bx+B6hwXcH2vvg4ADc/f9At4JZLO+c7/ueO8JvOUD//73a40UcLe+vtd6mr31Hsl+BByYE5sB74ZVXUvv19+71r0v+Vzvd9FZ+26g3T5paPcbJ+D9czV9bwQcmC2bAa/PtyH06+PnZD93D3ovv3boeuk6MbA2PO36dT7IQ2EdjvSIAdd/z+EeCTgwfyMH3IdxcEIYPxTwof/tMOjt1wQtTHItz/8oDP3YhIirSeMXIq7O7w50f206Q8H19gVc+PvX+/jz7l4IODBb4wV8JP3g/7sx9gSAsRFw91SaPvECgAXfOuD+/fEB76UBYILMBRwA4BFwADCKgAOAUQQcAIwi4ABgFAEHAKMIOAAYRcABwCgCDgBGEXAAMIqAA4BRBBwAjGoCvlhswiEAgAXS7TrgBQEHAGNcwFcrH/Cy3IbDAIApk143AZfXKDIAgOmLzc7yXALun8LlQFHwJA4AUyR9lk77XhcS8LKKT+FyUP7L5uvrunp5yavnZ5lV9fTUzuMjwzAMM9bo3kp/pcPSY+my9Dk+bEu3s/W6rOQpfFfE25APTbwAwzAM8/EZ6qvv765453lR/QFdKYR4beodcgAAAABJRU5ErkJggg==" InformativeScreenshot="15c161660b6927e342a490524d2fb17a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;First Name&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="48, 319, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='emp-firstname' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='emp-firstname' tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control' aaname='' /&gt;" Guid="71171953-bbca-467b-af7c-d7ebb0f7b66d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUISURBVHhe7dq7bttIFIBhPXDalOncuXPr0kVeIYAbP4KBwM8QJE2uti6kd5bnzIVnyKFoKWbCQf4PGMAiKV5G0C+Gu5vn5/+cjLaV8ayjafJxOMTRMhgMBmPR4Xs77HDss7Q6dlsDPgy33dl+z2AwGIy/MWyLhyHXgNtwy5CFAIB1kTbbVku7N3YBAGDdbLM14HJ7zp03AKyftDo+UtnIH/KsBQBQh/h8fCN/7HZNWAwAWDtptrR7s9u1brsl4ABQC2m2tLsLeOOengg4ANRCmi3t3kjJn54OYTEAYO2k2dJuDfjjIwEHgFpIszXgcitOwAGgHtJsaXcX8AMBB4CK+IAffMB//dqHxQCAtZNmE3AAqBABB4BKEXAAqBQBB4BKEXAAqBQBB4BKEXAAqNSCAf/iPly+c2/eTo337j5s+ao+37mLt1fuw+fwek0+vi/MQxx+Pu5vur9vHvz2Z3lw9x/DnyMP7lqOdXnnPoUlPf95Xdx+Ca8BrN3iAf/jQVh9wBf64VI+0NdzAS9uQ8CB2hDwP2klAb+4vCqcBwEHavP3Ax6De2sfL5jHCXFZfKxQ3N4EuxDwbD9mnS4fPE74dNvFzS4bPPYYXY8er19/9PHHCwJuH6Houdzc6Tz2x/bzmo6Xrqe/u54+jxj4sI9sm+HnNTyOjP7c/Xn25yZD35vNR/45zM4lgJOsJODdFzpFsw9HupMM2+jrFIg+Jhq6+FrXx3CEfZkg+23Deg2KjUx+ztl+VbiDjdc08f7JiJ8TcDsPHbte6Dbp+l52B27nsd82v/bhcdIPRFim6+37Y5zNXOs24fXsXAI42eIB1y91YaQv7igkwyiJY+ERJj424FnMIxuqQUSy7f12+XE6JsISqFGAiscMYuRGo9/ehnMcvTCnWVgtM09F+fp8/3Zeyuy52Th742P3n+P8XAI43UruwPPgzQd8HMgUF7t+IhC6/0KI8uP6Y5aDK/sMMS2uPxbw48EaBTybh072IzA8zmkBz38Qyp+XnkM6Xtw2P0/vWMDn5hLAOf7JgGfxSdsPzleXz8dw9vqs1wh4Yn9A4nyMI5orrE/XmV+/nofuuz9fe27ZHKrxvtP5z84lgHNUGvBhDMyx7P4K+x6fl399fTvcdi7Q/n15xGa8asAjez1nBLzjY33lLo7uJ7/ekwI+O5cAzlFtwG0Idfv4OttfiI7Zl9+2cDzZ5yCWpW01XHG78DhjFK2pSP92wAs/GoXrnZ7zcsDjcrkWG3C7Hx/5/tinBfwFcwngZIsH3P8zvDTCl/msgHfbF/63Q1XYX4qPPa6l7ymHz4fHvH8YnBDxfhwJ9KvcgfexjWP8A9ItL4ZxHNkkXEeagzAn6TjdOfl9+/M/NeDptd1n8RwBvNSCAV9IIdC/bYl9AsDCCHhH7wyzu0kAWL9/PODxccTxxxoAsEb1BRwAoAg4AFSKgANApQg4AFSKgANApQg4AFSKgANApQg4AFSKgANApQg4AFSKgANApQg4AFQqC/jj4yEsBgCsnTQ7BLwh4ABQER/wxm22Wx/wtn0OqwAAayWtlmZLuzXgcisuAwCwbrHXGvDdTgLu78JlYdNwJw4AayNtlkbHxyfS7i7grZY8rpD/uvnz5979+LFz37/L2Lpv3/rx9SuDwWAwlhi2tdJeabC0WJosbY432tJsafdmv2+15FMR70NeGvEgDAaDwThvlNrq2zsd78bt9637HyIK3WOrjIPyAAAAAElFTkSuQmCC" InformativeScreenshot="0e10dd76504f73b8631e5b6b44a603a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;Last Name&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="442, 319, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='emp-lastname' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='emp-lastname' tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control' aaname='' /&gt;" Guid="b031a4d0-c95e-4128-b107-3a9231e23b35" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATISURBVHhe7dq7TtxMGIBhX3DalOno6GgpU+QWkGi4hEiIa0CkyRHWu14y8TcHe2Y8PkGc7CfeR5ro92Fnx17ti3+S6vn5t5FxPMp4tqNp0nE4hHFkMBgMxubDNTdvcWi09Fq6bQOehzueaL9nMBgMxv8acY/zkFdxuGVI0AEAp0f6HPe6ijcAAKcvCbg8mvPkDQA6SK+l25X8Ib9nAQDoId2u5I+6bvwuAIAG0u2qro9mtyPgAKCJdLsNeGOengg4AGgi3a6k4k9PB78LAKCBdNsG/PGRgAOAJtLtSh7DCTgA6OIDfiDgAKBMF/Bfv/Z+FwBAA+k2AQcAhQg4AChFwAFAKQIOAEoRcABQioADgFIEHACU2i7gt5/Mu/cfRsfZ9Rd/4t/1+WM7/8c7v3VKvpir8+2uW9zf3pl7/98D/vMovv/DjTl7f2GuHvw2ABU2Dvgn89lv/itvNeD31xfm3fnNbMCLnwkBB1Qi4P/MKQT8wpy1axjcHwIOqPTfA+6Ce2Pjlvx6xUYl7OvjUjo/DtIg4Mk80TG///LWbTp35jLZ56LbvbZwPfb9uuNTEVwQ8HytMuJr6Z6i02M23t3+kTWEz6N03XZf9LrJdfh7dB2f416brCP7YbL8PgFY6jQC3n6pu6CESEUBsOf47XB+H0IXlLBtj4fY+Ln6WLlz3XEf50Egw5rTeYULVDg+9vqxOM0FPP/h0YrXn0c2O3/ZE7hbe3odrWTumXWEexi9fvozWXufACy1ccDdF3s4si9/Ep5hQOI4Dc9vRXGKA57EPJgIWXK+nDcIYhRhG73+tUHxPa25gJdE92ImemsCPojq4IdDLv5M4jh7ydziNfcJwFKn8QSefJEXBDz/4kcB6o+PBVPm97Gyr0vDFN7Xxb2dqzDsnPb6ysfLYVoacB/XaD63pmx/9h7rAt6Kr70Y8LF1DD+fyYCvvk8Alnp7Ac9i1Z2frdfunwiiC/z89fVG1tNx152GrRBLEUfRn7s64K3uGpJ7MreOwpoGc/fXuv4+AVhKZ8DzUEXvFc83nLuVr0u22/musnNnw2PnyZ9ap8wEvHS/4qfkkug1Lwl4F+vziz7gs+tYF3B3bM19ArCUzoC3x/sQuvPDdjKfXUM8lw9W4f3S80Th3CRkLlJpNNO1pJYEPA5dtq5CCIfXOnG/x477e9TNPbcOv53cq8Hc8bWuvU8Alto44O6LXxw+PC8KeOmfHXqD+Xx08/eN2dcU49fHK4wkXCFO0fHxKA3P7Ya/NvfU3++/vPWv8WvOj5ei6F7nd8XGAt5y199He3odawPeb8dzEm/g9bYL+EaGwX+9LeYEgK0RcPtEmf5qAgA0eNMBD78q4H/nAWikLuAAAIeAA4BSBBwAlCLgAKAUAQcApQg4AChFwAFAKQIOAEoRcABQioADgFIEHACUIuAAoFQX8MfHg98FANBAut0GvCHgAKCMDfhu5wJ+PD773QCAUya97gIuv0aRAQA4faHZVV1LwN1TuOxoGp7EAeAUSZ+l067XjQT8aMJTuOyUv9n8+XNvfvyozffvMnbm27d+fP3KYDAYjK1G3Fvpr3RYeixdlj6Hh23pdrXfH408hY9FvA95aYQ3YDAYDMbLR6mvrr9j8a7rxvwBaofkQAFX72cAAAAASUVORK5CYII=" InformativeScreenshot="f7dacb95bea77d1777ae7f496c016aca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;Date of birth&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="48, 394, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='emp-dob' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='emp-dob' tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control' aaname='' /&gt;" Guid="1ca9cdfc-2479-4670-9337-e06306408fcb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU+SURBVHhe7drLTttAFIDhPHC3XXbHrrtuWXbRV6jEhkdAQjxDVTa9Qm6mrs9cnHPm4gSKqUf8nzQScRzP2BF/TNrVw8OfXkbXyXhwY7+3Y7eLo2MwGAzGrMP3Nu1w7LO0OnbbBTwNtz7YdstgMBiM/zF0i9OQu4DrcMuQjQCAZZE261ZLu1d6AwBg2XSzXcDl9pw7bwBYPml1/EplJT/Idy0AgDbE78dX8sNmsw+bAQBLJ82Wdq82m65frwk4ALRCmi3tHgK+7+/vCTgAtEKaLe1eScnv73dhMwBg6aTZ0m4X8Ls7Ag4ArZBmu4DLrTgBB4B2SLOl3UPAdwQcABriA77zAf/9exs2AwCWTppNwAGgQQQcABpFwAGgUQQcABpFwAGgUQQcABpFwAGgUTMG/Lb//P5d/+ZtbXzqr8Kez+rrZX/29kP/+Wt4vCTXnwrX4anX4ra/ur4NP8/j6mN9fV8uPqj1q/HxJuwhbvrzYdv5dXhYpM/jlP0BRLMH/Oxi3shkFh/wWgwfs+YXuLZHrqNb8/vL/kt47PkA24hPSc+DgAOPQcBfUiXgwt3tZkGseYFrO7FWUQ54fXsZAQf+xf8PeAzuhf56wYfj8Cf8MOJdXXF/FexCwM1x1HOlaGYBSr72yM7HzXd4fvLucyqK6brT447H9td13KbWWjvPqsq5+b8I8u3aaQG3QZb1nV1c+rt0Oe7ZYQ7/mrD/sI8+d4IOlC0k4PEXWBwCNf7ihn3c4zFshxD64ITHJoThWCo0ft/wvAuYDp1dszmu4wMznlPl9dWITwXcxK5wJxpi67el17Ywb7Y2y1wHEa6rPbfaWtNQR7JuPac9D/8BU7/ecX8z75HzAF6z2QMe76LSMf7S6jgHeRxUCAr7mxDogJuYRzoa/rh2LXF/v5+dZ6DC5u8oY3yC4pzBZBRt7HL6+SR8bs78uC6YxQ+T5PWBue6nBHxYT2kczsGek1uPeV/TdSTvh3PsugCv10LuwG3wjgc8D+QYK/18JULu+CFsOip2Xj9nKVD+mP78ys8/V8DzOfzzybV1x7X7jaMY8EoU9QfBKQE375Hnrud4/nae/AOlHHC7rspaAbzOgJuQjPsn63Xbp8Lh13T0/LSpKLr54nP+2DbAOmR2re56TcQ2V4miXt8TA26Pbech4MDzajTg6S+0mksfr3DsfF3+sf+HM72vn7O+fv86G6QjJqJo4lbaz5x3cg5u//Q8p6TXwDPXnYADi9dswHVc3P7xsTleiKw6lt+3MJ8cMwlSaV8XIRM5GxezllQlitk8WZD9+eu5bAzz84yvqV3/bM5wXe2HwuMDbrfb+OYBT7eVYl3aBkDMHnAXxuII8XhSwIf9C//t0Ckcz0UinVdL46X40KnXp9EKET+MevTyfeuvSec9vw7X09yl69fm1/voh2eyHrP/KQFXrx1H7X0blAJuz4OAA48xY8BnUgj0P5vjmAAwMwI+cHeT6Z0hACzcKw+4//N88msPAFio9gIOAHAIOAA0ioADQKMIOAA0ioADQKMIOAA0ioADQKMIOAA0ioADQKMIOAA0ioADQKMIOAA0ygT87m4XNgMAlk6aHQK+J+AA0BAf8H2/Wq99wLvuITwFAFgqabU0W9rtAi634jIAAMsWe+0CvtlIwP1duGzc77kTB4ClkTZLo+PXJ9LuIeCdK3l8Qv5189evbf/z56b/8UPGuv/+/TC+fWMwGAzGHEO3VtorDZYWS5OlzfFGW5ot7V5tt50reS3ih5CXRpyEwWAwGE8bpbb69tbjve+3267/C/h/oNNemoGAAAAAAElFTkSuQmCC" InformativeScreenshot="50a4432668357e7dadef6756953224a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;Designation&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="442, 394, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='emp-designation' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='emp-designation' tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control' aaname='' /&gt;" Guid="09715fd9-5c1b-4894-96ff-47b62b1d5571" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUNSURBVHhe7dq7TtxAFIBhP3DalOno0qVNSZFXQKLhEZAQz4BCkyvslTg+c7HPXOzdDeziQ/5Pmgh7veOxI/61Nmmenv60MrZbGU9ubDbpWK/j2DIYDAbj6MM3N29xbLT0WrrtAp6HW0+0WjEYDAbjtYbucR7yRodbhgQdADA/0mfd60ZvAADmLwm4PJrz5A0ANkivpduN/CHfswAA7JBuN/LHcrkJuwAAFki3m+Vy2y4WBBwALJFudwHftI+PBBwALJFuN1Lxx8d12AUAsEC67QL+8EDAAcAS6XYjj+EEHABsCQFfE3AAMKYP+O/fq7ALAGCBdJuAA4BBBBwAjCLgAGAUAQcAowg4ABhFwAHAKAIOAEYdL+A3X9p37z+MjrPL+3Dgy7o+7+Y/vw1bc3LfXnws78OL34uvV+3Z+0/txdewfQJ3N7ftXfh5vvcfeHuOHPAv7XXYPJW5B7yM9W37WUJuNHp3l5/adx+v+oADOB0CfjJjAe+4p+YP7eebsG0IAQdez6sH3Af3Kvl6wUUuRM3vG74SqB2vg10EPJlHvVaNpn8aHvblX3uU1+PO178+9dXFRMA7e6/bydelzuvep9cRnvDDOLu8UtcYrzc/Rq0xX4eMsBYX736/P+ch1xHjf53Mc/oPfcCqeQS8+8Xtoxm/O1dPde6YsB2PHyLj4xO3k4CEuYYgh1C510MEdWySNafzCh+s+PrY+8ciPh3w5Em2mCc9Vx7J5L1JwPM1hu3+nsRwq7+n5Nz+9eH+dbJ7mpy7s//9j/dT35PKPQUw6sgB97EoxxAMHWevjIaORHl8x53Lz6kDkofOUcf6gGRr0fHJz6Mj7EKpwhdUz+mo91bk11gc14d5R+R0wNW19sITsQ54eq5KtBPp61MBP/T+i3w+AOPm8QSe/JLvEfA8Cipaw+tjwZT5Q+AqMUvC1G3XhpvTXV/99WJ9zr4BD4GuzZuEOdsXqXtRj6G+zvJe1/eVa0ruUzXgu+9/bX31NQOo+f8Cro4V/fHZet3+iZC4Ne1xfYPpgMv5/Gv++seOS+mwhmt60YD7n938/T1P35Of45D7X1tffc0AamwGPP8FV+fS85Vzd/J1yXY330V2rDvn1PrdPMMHwW4TAU8+VEKU83VPUnPruWp/B+71PQO+8/1TAd99/wk48Dw2A969PoTQHx+3k/ncGvRc/tja+dLjROXYJF4htEls0rWkxgJeOU+xbv2BUgm8jrb+uTg2bPdz+3PXrtvtc+vQH1Jhrfo92d/zIfefgAPPc+SA+1/26gi/xP8U8Np/OwyK+UJ08/Nq7j3VD5shWHGksRuCGEc93qI8dvI9xf3T65tYVxJwkR5b/2+E7sAg3ec/OPR58g+FYX55zyH3n4ADz3O8gB9JGfznO8ac8yXB1YEHYBUBf8tBK74CCfePJ1zgTfivAx6/Hhj/2sO+/CsQ4g28HeYCDgDwCDgAGEXAAcAoAg4ARhFwADCKgAOAUQQcAIwi4ABgFAEHAKMIOAAYRcABwCgCDgBG9QF/eFiHXQAAC6TbXcA3BBwAjHEBXyx8wLfbp7AbADBn0us+4PI1igwAwPzFZjfLpQTcP4XLjs2GJ3EAmCPps3Ta93ojAd+28Slcdsq/bP76tWp//ly2P37IWLTfvw/j2zcGg8FgHGvo3kp/pcPSY+my9Dk+bEu3m9Vq28pT+FjEh5DXRjwBg8FgMP591Prq+zsW7+Vy0/4FyoShkSBmUdUAAAAASUVORK5CYII=" InformativeScreenshot="aba194da1cf1c2f37116c7fccc8cfd5d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,227" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Text="[CurrentRow(&quot;Phone Number&quot;).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="48, 469, 364, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='phone-number' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='phone-number' tag='INPUT' type='text' class='wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control' aaname='' /&gt;" Guid="fce3eee7-ccf0-473d-9ad8-f2f4d2e3b6cf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAXAAAAA2CAYAAADeb8L6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVqSURBVHhe7Zq7btw6EED3g92mTOfOnVuXKfILAdz4EwIY+YYgafK09+nLq+FDGlIjyd5YWXFzDjDAiuJjSIFnubJXT0//OYnDQeLJx36fx26X4kAQBEHMGsG3pYeTn8XVydte4KW4dWfbLUEQBHGK0C4uRe4FrsUtIYUAALAsxM3a1eLulS4AAIBlo53tBS7Hc07eAADLR1ydXqms5IO8awEAgDpI78dX8mGz2cdiAABYOuJscfdqszm49RqBAwDUgjhb3N0IfO8eHxE4AEAtiLPF3Ssx+ePjLhYDAMDSEWeLu73AHx4QOABALYizvcDlKI7AAQDqQZwt7m4EvkPgAAAVEQS+CwL//XsbiwEAYOmIsxE4AECFIHAAgEpB4AAAlYLAAQAqBYEDAFQKAgcAqBQEDgBQKTMK/Kv7cPXWXbwZivfuY6z5qny5c5dvrt2HL/F6Sdy/N9YhxrtPsZJzH9/l1ycn5n15+zUWKGZd70/uphn35j5eAkDG7AI3N/2cLF7g1hdXEFVaq6UK3MwdgQOcDAT+NxkUuHOfb6/dxdWd+9x8XqbAr92l/KIq80LgACfj9AJPArhNp7zupOdFlsqSOMz6SiCGULJ+1D1fHqWZ0CL1tKfPEL35+PG6+6PifZHA7/JXUGW/I3mlL4Bs3sU8J+elSXnHuWZCzdbbEq4ui59v9ZqFtn7+qazN1apf9t8wsRaXTXvpx2wLUDELEXizudpN2707bzebFkcrzE6EYfPH60wosS8lr1A33vcbvxN6mXPWrycIpZ3TQPtBiScRxsuWOKfUbxJvJ5t83GwOwlHtR+ZVovLutc3WOwo3k6QuC591+5RrN7bOpV+/XPOpuYT+9TMCOB9mF7hsTivaDRvloze935TZiVFJwKifiVcLJZNLQks63+x5/VAvH6dBySyc7mLbhDlmxLedWI8GL53ixOzL/BeDzr9Dr9lz2o/Nq0d2L7Rvv6Sy+arn1KLLivUWeuP2n0+Z60vmYq0FwLmwkBN4LrxpgfcF2W5qfX9ASr7/KCC9wfNxw5iWbEOfUWTm/TGB9/Mp6QTV0ZXZUgvzVtKaaG/nPZBbmbcfy3oeVm66zLg/KfD+WnbPaXou1loAnAv/pMCzTd3WL/L15aWMNCGnyflp5hS46nu0/eS8DIy8/TOSsux5WLnpMuP+nwj8GXOx1gLgXKhU4OWmVWPp/oy++3mF6/CHMl03jDmcf2j3Ijm8isDtddVrNt5+al4GZt6hn4ura7Vu6jklsudl3J8UePmsXzYXay0AzoVqBa43fXsalIusvyhZ1Veoa4wnfWZj2nW9EFI9L59cMFkuJa8icCOvuCZprV/cviGbV8lQ3nH+XV/99fb9tmt0nMCz+75+l/vUXKy1ADgXZhd42OBWxE13lMCb+sa/HXqM/pJEsnE1hQA1QRCqfSm5VmIpRgQ9JMICSzq9smJcnftz2k/OSzOSd1hbvaZJuiFu7rW0jxO49W+HmrG5WGsBcC7MKPCZMAT9x8zRJwDAzCDwBn+C45QGAJXxjws8/dyffq0BALA06hM4AAB4EDgAQKUgcACASkHgAACVgsABACoFgQMAVAoCBwCoFAQOAFApCBwAoFIQOABApSBwAIBKQeAAAJWSCfzhYReLAQBg6Yizo8D3CBwAoCKCwPdutV4HgR8OT/EWAAAsFXG1OFvc7QUuR3EJAABYNsnXXuCbjQg8nMKlcL/nJA4AsDTEzeLo9PpE3N0I/OBNnm7IXzd//dq6nz837scPibX7/r2Lb98IgiCIOUK7VtwrDhYXi5PFzemgLc4Wd6+224M3+ZDEO5FbkQYhCIIgjgvLrcG9w/Leu+324P4HqwJVJqDb7NUAAAAASUVORK5CYII=" InformativeScreenshot="0927b23100da430e03ec4f3275348da0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NSelectItem DisplayName="Select Item 'Select Gender'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[CurrentRow(&quot;Gender&quot;).ToString]" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Version="V3">
+                        <uix:NSelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="4">
+                            <x:String>Select Gender</x:String>
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                            <x:String>Others</x:String>
+                          </scg:List>
+                        </uix:NSelectItem.Items>
+                        <uix:NSelectItem.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="560, 469, 130, 25" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'Select Gender'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='wpcf7-form-control wpcf7-select wpcf7-validates-as-required' aaname='' /&gt;" Guid="5db7e7ce-d30e-40b1-b60f-ccd0bfcf9bdb" InformativeScreenshot="90c47342b434d800fc003ce65ca9de8f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                        </uix:NSelectItem.Target>
+                      </uix:NSelectItem>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Checkbox'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="302, 551, 13, 13" DesignTimeScaleFactor="1" ElementType="CheckBox" FriendlyName="'Checkbox'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='gdpr-term' aaname='' /&gt;" Guid="124a9e34-7a30-4fdf-8dac-3830f43152af" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABRSURBVDhPY/hPBUBdQ54/f/5/2rRp/8vKyghikDqQehiAGwKSOHbsGJSHH4DUgdTDANwQkA2kAGT1o4ZAwKghmACrIVRJsVTJO5QAKhjy/z8A2VE4SQZFK6QAAAAASUVORK5CYII=" InformativeScreenshot="a9e5036e93e7c6b541e6dfd675d196cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Double" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="358,166" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f58219c0-a44a-41ac-90dc-30988229df4c" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://stardex.com.ng/HR-On-boarding-Process-Form/" DesignTimeRectangle="363, 594, 129, 49" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Submit'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='default-btn' aaname='Submit' check:innerText='Submit' /&gt;" Guid="8f916ea7-4152-4873-bd63-8a241d550471" ImageBase64="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" InformativeScreenshot="251fc5896a2af5a8bb1023ed1ea2ec4a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="a16bd788a616530dde259f09a3edb2ba.jpg" Selector="&lt;html app='chrome.exe' title='HR On-boarding Process Form – Stardex' /&gt;" Url="https://stardex.com.ng/HR-On-boarding-Process-Form/" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
